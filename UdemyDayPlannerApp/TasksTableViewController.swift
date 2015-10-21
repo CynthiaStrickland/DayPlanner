@@ -53,7 +53,6 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
     
-    // Configure the cell...
     self.configureCell(cell, atIndexPath: indexPath)
     return cell
   }
@@ -76,9 +75,7 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     self.navigationController?.popViewControllerAnimated(true)
   }
   
-  // Override to support conditional editing of the table view.
   override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
     return true
   }
 
@@ -97,13 +94,13 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
         let alertController = UIAlertController(title: "Error", message: "Error in Deleting the Record", preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
-        
+      }
       }
     }
 
   // MARK: - Navigation
   
-  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
     let controller = segue.destinationViewController as! EditTaskViewController
     
@@ -122,39 +119,39 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     }
   }
     
-  // Mark: - Fetched Results Controller
-  var _fetchedResultsController: NSFetchedResultsController? = nil
-  
-  var fetchedResultsController: NSFetchedResultsController {
-    if _fetchedResultsController != nil {
+    // Mark: - Fetched Results Controller
+    var _fetchedResultsController: NSFetchedResultsController? = nil
+    
+    var fetchedResultsController: NSFetchedResultsController {
+      if _fetchedResultsController != nil {
+        return _fetchedResultsController!
+      }
+      
+      let fetchRequest = NSFetchRequest()
+      let entity = NSEntityDescription.entityForName("Tasks", inManagedObjectContext: self.context)
+      fetchRequest.entity = entity
+      
+      fetchRequest.fetchBatchSize = 20
+      
+      let sortDescriptor = NSSortDescriptor(key: "taskDateStamp", ascending: false)
+      
+      fetchRequest.sortDescriptors = [sortDescriptor]
+      
+      let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: "taskDate", cacheName: nil)
+      aFetchedResultsController.delegate = self
+      _fetchedResultsController = aFetchedResultsController
+      
+      do {
+        try _fetchedResultsController!.performFetch()
+      } catch _ {
+        abort()
+      }
+      
       return _fetchedResultsController!
+      
     }
-    
-    let fetchRequest = NSFetchRequest()
-    let entity = NSEntityDescription.entityForName("Tasks", inManagedObjectContext: self.context)
-    fetchRequest.entity = entity
-    
-    fetchRequest.fetchBatchSize = 20
-    
-    let sortDescriptor = NSSortDescriptor(key: "taskDateStamp", ascending: false)
-    
-    fetchRequest.sortDescriptors = [sortDescriptor]
-    
-    let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: "taskDate", cacheName: nil)
-    aFetchedResultsController.delegate = self
-    _fetchedResultsController = aFetchedResultsController
-    
-    do {
-      try _fetchedResultsController!.performFetch()
-    } catch _ {
-      abort()
-    }
-    
-    return _fetchedResultsController!
-    
-  }
   
-  // Mark: - FRC - Delegate Methods
+// Mark: - FRC - Delegate Methods
   
   func controllerWillChangeContent(controller: NSFetchedResultsController) {
     self.tableView.beginUpdates()
@@ -200,7 +197,6 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
     default:
       return
       
+      }
     }
-    
   }
-}
