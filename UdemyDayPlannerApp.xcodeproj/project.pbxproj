@@ -15,6 +15,8 @@
 		3DCB303B1BD82D56007652E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCB30391BD82D56007652E4 /* LaunchScreen.storyboard */; };
 		3DCB30461BD82D56007652E4 /* UdemyDayPlannerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30451BD82D56007652E4 /* UdemyDayPlannerAppTests.swift */; };
 		3DCB30511BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30501BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift */; };
+		3DCB305F1BD82F38007652E4 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB305E1BD82F38007652E4 /* EditTaskViewController.swift */; };
+		3DCB30611BD82F60007652E4 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30601BD82F60007652E4 /* TasksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3DCB304C1BD82D56007652E4 /* UdemyDayPlannerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdemyDayPlannerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCB30501BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdemyDayPlannerAppUITests.swift; sourceTree = "<group>"; };
 		3DCB30521BD82D56007652E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCB305E1BD82F38007652E4 /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		3DCB30601BD82F60007652E4 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		3DCB302C1BD82D56007652E4 /* UdemyDayPlannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				3DCB30311BD82D56007652E4 /* Main.storyboard */,
+				3DCB305E1BD82F38007652E4 /* EditTaskViewController.swift */,
+				3DCB30601BD82F60007652E4 /* TasksTableViewController.swift */,
 				3DCB302D1BD82D56007652E4 /* AppDelegate.swift */,
 				3DCB302F1BD82D56007652E4 /* ViewController.swift */,
-				3DCB30311BD82D56007652E4 /* Main.storyboard */,
 				3DCB30371BD82D56007652E4 /* Assets.xcassets */,
 				3DCB30391BD82D56007652E4 /* LaunchScreen.storyboard */,
 				3DCB303C1BD82D56007652E4 /* Info.plist */,
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCB30301BD82D56007652E4 /* ViewController.swift in Sources */,
+				3DCB30611BD82F60007652E4 /* TasksTableViewController.swift in Sources */,
 				3DCB302E1BD82D56007652E4 /* AppDelegate.swift in Sources */,
 				3DCB30361BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld in Sources */,
+				3DCB305F1BD82F38007652E4 /* EditTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
