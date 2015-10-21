@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DCB302E1BD82D56007652E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB302D1BD82D56007652E4 /* AppDelegate.swift */; };
+		3DCB30301BD82D56007652E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB302F1BD82D56007652E4 /* ViewController.swift */; };
+		3DCB30331BD82D56007652E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCB30311BD82D56007652E4 /* Main.storyboard */; };
+		3DCB30361BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30341BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld */; };
+		3DCB30381BD82D56007652E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCB30371BD82D56007652E4 /* Assets.xcassets */; };
+		3DCB303B1BD82D56007652E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCB30391BD82D56007652E4 /* LaunchScreen.storyboard */; };
+		3DCB30461BD82D56007652E4 /* UdemyDayPlannerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30451BD82D56007652E4 /* UdemyDayPlannerAppTests.swift */; };
+		3DCB30511BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB30501BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DCB30421BD82D56007652E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCB30221BD82D55007652E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCB30291BD82D56007652E4;
+			remoteInfo = UdemyDayPlannerApp;
+		};
+		3DCB304D1BD82D56007652E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCB30221BD82D55007652E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCB30291BD82D56007652E4;
+			remoteInfo = UdemyDayPlannerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DCB302A1BD82D56007652E4 /* UdemyDayPlannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemyDayPlannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCB302D1BD82D56007652E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DCB302F1BD82D56007652E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DCB30321BD82D56007652E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DCB30351BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UdemyDayPlannerApp.xcdatamodel; sourceTree = "<group>"; };
+		3DCB30371BD82D56007652E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DCB303A1BD82D56007652E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DCB303C1BD82D56007652E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCB30411BD82D56007652E4 /* UdemyDayPlannerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdemyDayPlannerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCB30451BD82D56007652E4 /* UdemyDayPlannerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdemyDayPlannerAppTests.swift; sourceTree = "<group>"; };
+		3DCB30471BD82D56007652E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCB304C1BD82D56007652E4 /* UdemyDayPlannerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdemyDayPlannerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCB30501BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdemyDayPlannerAppUITests.swift; sourceTree = "<group>"; };
+		3DCB30521BD82D56007652E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DCB30271BD82D56007652E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB303E1BD82D56007652E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB30491BD82D56007652E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCB30211BD82D55007652E4 = {
+			isa = PBXGroup;
+			children = (
+				3DCB302C1BD82D56007652E4 /* UdemyDayPlannerApp */,
+				3DCB30441BD82D56007652E4 /* UdemyDayPlannerAppTests */,
+				3DCB304F1BD82D56007652E4 /* UdemyDayPlannerAppUITests */,
+				3DCB302B1BD82D56007652E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DCB302B1BD82D56007652E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB302A1BD82D56007652E4 /* UdemyDayPlannerApp.app */,
+				3DCB30411BD82D56007652E4 /* UdemyDayPlannerAppTests.xctest */,
+				3DCB304C1BD82D56007652E4 /* UdemyDayPlannerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCB302C1BD82D56007652E4 /* UdemyDayPlannerApp */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB302D1BD82D56007652E4 /* AppDelegate.swift */,
+				3DCB302F1BD82D56007652E4 /* ViewController.swift */,
+				3DCB30311BD82D56007652E4 /* Main.storyboard */,
+				3DCB30371BD82D56007652E4 /* Assets.xcassets */,
+				3DCB30391BD82D56007652E4 /* LaunchScreen.storyboard */,
+				3DCB303C1BD82D56007652E4 /* Info.plist */,
+				3DCB30341BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld */,
+			);
+			path = UdemyDayPlannerApp;
+			sourceTree = "<group>";
+		};
+		3DCB30441BD82D56007652E4 /* UdemyDayPlannerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB30451BD82D56007652E4 /* UdemyDayPlannerAppTests.swift */,
+				3DCB30471BD82D56007652E4 /* Info.plist */,
+			);
+			path = UdemyDayPlannerAppTests;
+			sourceTree = "<group>";
+		};
+		3DCB304F1BD82D56007652E4 /* UdemyDayPlannerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB30501BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift */,
+				3DCB30521BD82D56007652E4 /* Info.plist */,
+			);
+			path = UdemyDayPlannerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DCB30291BD82D56007652E4 /* UdemyDayPlannerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCB30551BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerApp" */;
+			buildPhases = (
+				3DCB30261BD82D56007652E4 /* Sources */,
+				3DCB30271BD82D56007652E4 /* Frameworks */,
+				3DCB30281BD82D56007652E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdemyDayPlannerApp;
+			productName = UdemyDayPlannerApp;
+			productReference = 3DCB302A1BD82D56007652E4 /* UdemyDayPlannerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DCB30401BD82D56007652E4 /* UdemyDayPlannerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCB30581BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerAppTests" */;
+			buildPhases = (
+				3DCB303D1BD82D56007652E4 /* Sources */,
+				3DCB303E1BD82D56007652E4 /* Frameworks */,
+				3DCB303F1BD82D56007652E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCB30431BD82D56007652E4 /* PBXTargetDependency */,
+			);
+			name = UdemyDayPlannerAppTests;
+			productName = UdemyDayPlannerAppTests;
+			productReference = 3DCB30411BD82D56007652E4 /* UdemyDayPlannerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DCB304B1BD82D56007652E4 /* UdemyDayPlannerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCB305B1BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerAppUITests" */;
+			buildPhases = (
+				3DCB30481BD82D56007652E4 /* Sources */,
+				3DCB30491BD82D56007652E4 /* Frameworks */,
+				3DCB304A1BD82D56007652E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCB304E1BD82D56007652E4 /* PBXTargetDependency */,
+			);
+			name = UdemyDayPlannerAppUITests;
+			productName = UdemyDayPlannerAppUITests;
+			productReference = 3DCB304C1BD82D56007652E4 /* UdemyDayPlannerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DCB30221BD82D55007652E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Cynthia Whitlatch";
+				TargetAttributes = {
+					3DCB30291BD82D56007652E4 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3DCB30401BD82D56007652E4 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3DCB30291BD82D56007652E4;
+					};
+					3DCB304B1BD82D56007652E4 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3DCB30291BD82D56007652E4;
+					};
+				};
+			};
+			buildConfigurationList = 3DCB30251BD82D55007652E4 /* Build configuration list for PBXProject "UdemyDayPlannerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DCB30211BD82D55007652E4;
+			productRefGroup = 3DCB302B1BD82D56007652E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DCB30291BD82D56007652E4 /* UdemyDayPlannerApp */,
+				3DCB30401BD82D56007652E4 /* UdemyDayPlannerAppTests */,
+				3DCB304B1BD82D56007652E4 /* UdemyDayPlannerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DCB30281BD82D56007652E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB303B1BD82D56007652E4 /* LaunchScreen.storyboard in Resources */,
+				3DCB30381BD82D56007652E4 /* Assets.xcassets in Resources */,
+				3DCB30331BD82D56007652E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB303F1BD82D56007652E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB304A1BD82D56007652E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DCB30261BD82D56007652E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB30301BD82D56007652E4 /* ViewController.swift in Sources */,
+				3DCB302E1BD82D56007652E4 /* AppDelegate.swift in Sources */,
+				3DCB30361BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB303D1BD82D56007652E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB30461BD82D56007652E4 /* UdemyDayPlannerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCB30481BD82D56007652E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB30511BD82D56007652E4 /* UdemyDayPlannerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DCB30431BD82D56007652E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCB30291BD82D56007652E4 /* UdemyDayPlannerApp */;
+			targetProxy = 3DCB30421BD82D56007652E4 /* PBXContainerItemProxy */;
+		};
+		3DCB304E1BD82D56007652E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCB30291BD82D56007652E4 /* UdemyDayPlannerApp */;
+			targetProxy = 3DCB304D1BD82D56007652E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DCB30311BD82D56007652E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCB30321BD82D56007652E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DCB30391BD82D56007652E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCB303A1BD82D56007652E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DCB30531BD82D56007652E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DCB30541BD82D56007652E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DCB30561BD82D56007652E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UdemyDayPlannerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DCB30571BD82D56007652E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UdemyDayPlannerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DCB30591BD82D56007652E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UdemyDayPlannerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdemyDayPlannerApp.app/UdemyDayPlannerApp";
+			};
+			name = Debug;
+		};
+		3DCB305A1BD82D56007652E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UdemyDayPlannerAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdemyDayPlannerApp.app/UdemyDayPlannerApp";
+			};
+			name = Release;
+		};
+		3DCB305C1BD82D56007652E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UdemyDayPlannerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UdemyDayPlannerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3DCB305D1BD82D56007652E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UdemyDayPlannerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.UdemyDayPlannerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UdemyDayPlannerApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DCB30251BD82D55007652E4 /* Build configuration list for PBXProject "UdemyDayPlannerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCB30531BD82D56007652E4 /* Debug */,
+				3DCB30541BD82D56007652E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DCB30551BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCB30561BD82D56007652E4 /* Debug */,
+				3DCB30571BD82D56007652E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DCB30581BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCB30591BD82D56007652E4 /* Debug */,
+				3DCB305A1BD82D56007652E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DCB305B1BD82D56007652E4 /* Build configuration list for PBXNativeTarget "UdemyDayPlannerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCB305C1BD82D56007652E4 /* Debug */,
+				3DCB305D1BD82D56007652E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DCB30341BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DCB30351BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodel */,
+			);
+			currentVersion = 3DCB30351BD82D56007652E4 /* UdemyDayPlannerApp.xcdatamodel */;
+			path = UdemyDayPlannerApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DCB30221BD82D55007652E4 /* Project object */;
+}
