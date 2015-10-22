@@ -84,6 +84,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="todaysPercentageLabel" destination="jOP-Uw-81l" id="lch-hE-o0t"/>
+                        <outlet property="totalPercentageLabel" destination="Mhx-M6-jFF" id="BwC-Gn-I3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +178,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbh-c8-Vu2">
-                                <rect key="frame" x="22" y="238" width="47" height="20"/>
+                                <rect key="frame" x="22" y="237" width="47" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -191,17 +195,11 @@
                                 </date>
                             </datePicker>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-lt-Rq2">
-                                <rect key="frame" x="84" y="233" width="51" height="31"/>
+                                <rect key="frame" x="183" y="232" width="51" height="31"/>
                                 <connections>
-                                    <action selector="statusSwitchChanged:" destination="gUe-cF-xVj" eventType="valueChanged" id="SOB-JC-imz"/>
+                                    <action selector="statusSwitchChanged:" destination="gUe-cF-xVj" eventType="valueChanged" id="7Er-Sq-EsR"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW9-6E-Fue">
-                                <rect key="frame" x="161" y="238" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjk-0V-V1S">
                                 <rect key="frame" x="149" y="279" width="70" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -209,10 +207,15 @@
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveButtonPressed:" destination="gUe-cF-xVj" eventType="touchUpInside" id="OBJ-o9-ohI"/>
-                                    <action selector="savePressed:" destination="gUe-cF-xVj" eventType="touchUpInside" id="7uC-l6-5Rm"/>
+                                    <action selector="saveButtonPressed:" destination="gUe-cF-xVj" eventType="touchUpInside" id="wNN-1i-D3R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW9-6E-Fue">
+                                <rect key="frame" x="254" y="237" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -225,7 +228,10 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="taskStatusLabel" destination="fbh-c8-Vu2" id="25r-eZ-N0H"/>
+                        <outlet property="datePicker" destination="n56-2H-vtE" id="IaN-0f-cN9"/>
+                        <outlet property="saveButton" destination="qjk-0V-V1S" id="dYv-dG-rsT"/>
+                        <outlet property="statusSwitch" destination="rUQ-lt-Rq2" id="0zd-KO-2Np"/>
+                        <outlet property="taskStatusLabel" destination="OW9-6E-Fue" id="OLl-Oh-8Se"/>
                         <outlet property="taskTextField" destination="iJe-Sx-Sez" id="Qjd-zI-E5r"/>
                     </connections>
                 </viewController>

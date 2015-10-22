@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     let today = NSDate()
     let formatter = NSDateFormatter()
-    formatter.dateFormat = "dd-MMM-yyyy"
+    formatter.dateFormat = "dd-MM-yyyy"
     
     let request = NSFetchRequest(entityName: "Tasks")
     request.resultType = NSFetchRequestResultType.DictionaryResultType

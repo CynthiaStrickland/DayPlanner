@@ -20,11 +20,10 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
   
   @IBOutlet weak var taskTextField: UITextField!
   @IBOutlet weak var taskStatusLabel: UILabel!
-  
   @IBOutlet weak var datePicker: UIDatePicker!
   @IBOutlet weak var statusSwitch: UISwitch!
+  @IBOutlet weak var saveButton: UIButton!
 
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -75,7 +74,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
       let dateString = task.valueForKey("taskDate")!.description
       
       let formatter = NSDateFormatter()
-      formatter.dateFormat = "dd-MMM-yyyy"
+      formatter.dateFormat = "dd-MM-yyyy"
       var date = formatter.dateFromString(dateString)
       date = date?.dateByAddingTimeInterval(18000)
       
@@ -93,8 +92,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
     
   }
   
-  
-  @IBAction func saveButton(sender: AnyObject) {
+  @IBAction func saveButtonPressed(sender: AnyObject) {
     
     if taskTextField.text == "" {
       
@@ -108,7 +106,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
         
         let date = datePicker.date
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "dd-MMM-yyyy"
+        formatter.dateFormat = "dd-MM-yyyy"
         
         let newTask = NSEntityDescription.insertNewObjectForEntityForName("Tasks", inManagedObjectContext: context) as NSManagedObject
         
@@ -134,15 +132,14 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
           self.presentViewController(alertController, animated: true, completion: nil)
           
         }
-        
-        
+            
       } else {
         
         if let task: AnyObject = self.taskItem {
           
           let date = datePicker.date
           let formatter = NSDateFormatter()
-          formatter.dateFormat = "dd-MMM-yyyy"
+          formatter.dateFormat = "dd-MM-yyyy"
           
           task.setValue(taskTextField.text, forKey: "taskDescription")
           task.setValue(taskStatusLabel.text, forKey: "taskStatus")

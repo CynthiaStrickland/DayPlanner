@@ -51,7 +51,7 @@ class TasksTableViewController: UITableViewController, NSFetchedResultsControlle
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
     
     self.configureCell(cell, atIndexPath: indexPath)
     return cell
