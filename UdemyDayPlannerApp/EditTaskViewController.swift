@@ -68,13 +68,12 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
     
     if let task: AnyObject = self.taskItem {
       
-      
       taskTextField.text = task.valueForKey("taskDescription")!.description
       
       let dateString = task.valueForKey("taskDate")!.description
       
       let formatter = NSDateFormatter()
-      formatter.dateFormat = "dd-MM-yyyy"
+      formatter.dateFormat = "dd-MMM-yyyy"
       var date = formatter.dateFromString(dateString)
       date = date?.dateByAddingTimeInterval(18000)
       
@@ -83,7 +82,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
       if task.valueForKey("taskStatus")!.description == "Complete" {
         statusSwitch.on = true
         taskStatusLabel.text = "Complete"
-      }else {
+      } else {
         statusSwitch.on = false
         taskStatusLabel.text = "Open"
       }
@@ -106,7 +105,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
         
         let date = datePicker.date
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "dd-MM-yyyy"
+        formatter.dateFormat = "dd-MMM-yyyy"
         
         let newTask = NSEntityDescription.insertNewObjectForEntityForName("Tasks", inManagedObjectContext: context) as NSManagedObject
         
@@ -139,7 +138,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
           
           let date = datePicker.date
           let formatter = NSDateFormatter()
-          formatter.dateFormat = "dd-MM-yyyy"
+          formatter.dateFormat = "dd-MMM-yyyy"
           
           task.setValue(taskTextField.text, forKey: "taskDescription")
           task.setValue(taskStatusLabel.text, forKey: "taskStatus")

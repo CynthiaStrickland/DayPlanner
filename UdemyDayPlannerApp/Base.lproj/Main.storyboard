@@ -194,7 +194,7 @@
                                     <!--2015-10-21 20:47:01 +0000-->
                                 </date>
                             </datePicker>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-lt-Rq2">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-lt-Rq2">
                                 <rect key="frame" x="183" y="232" width="51" height="31"/>
                                 <connections>
                                     <action selector="statusSwitchChanged:" destination="gUe-cF-xVj" eventType="valueChanged" id="7Er-Sq-EsR"/>
