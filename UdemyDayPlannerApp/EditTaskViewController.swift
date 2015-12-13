@@ -131,7 +131,7 @@ class EditTaskViewController: UIViewController, UITextFieldDelegate {
           self.presentViewController(alertController, animated: true, completion: nil)
           
         }
-            
+        
       } else {
         
         if let task: AnyObject = self.taskItem {
